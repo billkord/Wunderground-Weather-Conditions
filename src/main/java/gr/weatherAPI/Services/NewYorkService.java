@@ -1,6 +1,6 @@
 package gr.weatherAPI.Services;
 
-import gr.weatherAPI.Model.NewYorkWeatherAPI;
+import gr.weatherAPI.APIModel.NewYorkWeatherAPI;
 
 public class NewYorkService {
 

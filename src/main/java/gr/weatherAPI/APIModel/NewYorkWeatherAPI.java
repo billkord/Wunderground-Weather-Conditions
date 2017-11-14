@@ -1,4 +1,4 @@
-package gr.weatherAPI.Model;
+package gr.weatherAPI.APIModel;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
