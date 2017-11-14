@@ -11,10 +11,10 @@ public class PopulateAPIResponse {
     public static HashMap<String, String> getNewYorkMap (String jsonStringReceived) throws JSONException {
         HashMap<String, String> data = new HashMap<>();
 
-        JSONObject jsonReceived = new JSONObject(jsonStringReceived);
-        jsonReceived = jsonReceived.getJSONObject("history");
-        JSONArray jsonArray = jsonReceived.getJSONArray("dailysummary");
-        jsonReceived = jsonArray.getJSONObject(0);
+        JSONObject jsonReceived = new JSONObject(jsonStringReceived)
+                .getJSONObject("history")
+                .getJSONArray("dailysummary")
+                .getJSONObject(0);
 
         data.put("Max percentage humidity", jsonReceived.getString("maxhumidity"));
         data.put("Max Temp in C", jsonReceived.getString("maxtempm"));
